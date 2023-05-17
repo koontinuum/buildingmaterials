@@ -11,7 +11,7 @@ function Location() {
         height="450"
         frameborder="0"
       ></iframe>
-      <b>МКАД, 41-й километр, 4c28! Павильон Ж-3/8 наше местоположение. </b>
+      <b>МКАД, 41-й километр, 4c28! Павильон Ж-3/8 наше местоположение.</b>
       <div style={{ position: "relative", overflow: "hidden" }}>
         <a
           href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"

@@ -17,3 +17,11 @@
   font-size: 22px;
   color: #2f2f2f;
 }
+@media (max-width: 640px) {
+  .wrapper__location h1 {
+    font-size: 22px;
+  }
+  .wrapper__location b {
+    font-size: 19px;
+  }
+}
