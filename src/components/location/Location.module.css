@@ -1,0 +1,19 @@
+.wrapper__location {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  padding: 1rem;
+  margin-top: 60px;
+  flex-direction: column;
+  text-align: center;
+}
+.wrapper__location h1 {
+  margin: 40px 0 40px 0;
+  font-size: 44px;
+  color: #2f2f2f;
+}
+.wrapper__location b {
+  margin: 20px 0 20px 0;
+  font-size: 22px;
+  color: #2f2f2f;
+}
