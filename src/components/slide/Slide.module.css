@@ -1,0 +1,121 @@
+.slide__wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+.slide__wrapper .prevClick {
+  z-index: 1;
+  position: absolute;
+  top: 270px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  display: block;
+  left: -90px;
+}
+.slide__wrapper .nextClick {
+  z-index: 1;
+  position: absolute;
+  top: 270px;
+  right: -90px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transform: rotate(180deg);
+  display: block;
+}
+.nextClick img,
+.prevClick img {
+  width: 50px;
+  height: 50px;
+}
+.prevClick img:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+.nextClick img:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+.slide__wrapper h1 {
+  font-size: 44px;
+  color: #1f1f1f;
+  margin-bottom: 24px;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  cursor: grab;
+}
+.card {
+  margin-top: 40px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card p {
+  height: 80px;
+  font-weight: 700;
+  padding: 10px 10px;
+}
+@media (max-width: 909px) {
+  .nextClick img,
+  .prevClick img {
+    width: 40px;
+    height: 40px;
+  }
+  .slide__wrapper .nextClick {
+    top: 340px;
+    right: -60px;
+  }
+  .slide__wrapper .prevClick {
+    top: 340px;
+    left: -60px;
+  }
+}
+@media (max-width: 620px) {
+  .slide__wrapper .nextClick {
+    top: 340px;
+    right: -40px;
+  }
+  .slide__wrapper .prevClick {
+    top: 340px;
+    left: -40px;
+  }
+}
+@media (max-width: 425px) {
+  .nextClick img,
+  .prevClick img {
+    width: 30px;
+    height: 30px;
+  }
+  .slide__wrapper .nextClick {
+    top: 390px;
+    right: -38px;
+  }
+  .slide__wrapper .prevClick {
+    top: 390px;
+    left: -38px;
+  }
+}
+@media (max-width: 375px) {
+  .slide__wrapper .nextClick {
+    top: 400px;
+    right: -30px;
+  }
+  .slide__wrapper .prevClick {
+    top: 400px;
+    left: -30px;
+  }
+  .nextClick img,
+  .prevClick img {
+    width: 30px;
+    height: 30px;
+  }
+}

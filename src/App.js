@@ -3,7 +3,7 @@ import AboutStore from './components/aboutStore/AboutStore';
 import Catalog from './components/catalog/Catalog';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
-import Slider from './components/slider/Slider';
+import Slide from './components/slide/Slide';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Main />
       <Catalog />
       <AboutStore />
-      {/* <Slider /> */}
+      <Slide />
     </div>
   );
 }

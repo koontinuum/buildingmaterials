@@ -17,14 +17,14 @@ import block1 from '../assets/different-images/mark.svg'
 import block2 from '../assets/different-images/sale.svg'
 import block3 from '../assets/different-images/delivery.svg'
 
-import slide1 from '../assets/different-images/armatury.jpg'
-import slide2 from '../assets/different-images/gibsokarton.jpg'
-import slide3 from '../assets/different-images/grunt.jpg'
-import slide4 from '../assets/different-images/kirpich.jpg'
-import slide5 from '../assets/different-images/plirky.jpg'
-import slide6 from '../assets/different-images/profil.jpg'
+import slide1 from '../assets/different-images/gazobeton.jpg'
+import slide2 from '../assets/different-images/kirpich.jpg'
+import slide3 from '../assets/different-images/gibsokarton.jpg'
+import slide4 from '../assets/different-images/plirky.jpg'
+import slide5 from '../assets/different-images/kleyi.jpg'
+import slide6 from '../assets/different-images/kraska.jpg'
 import slide7 from '../assets/different-images/rastvoritel.jpg'
-import slide8 from '../assets/different-images/stalnoyugolok.jpg'
+import slide8 from '../assets/different-images/grunt.jpg'
 
 export const products = [
     {
@@ -117,3 +117,38 @@ export const storeBlocks = [
     }
 ]
 
+export const slideContents = [
+    {
+        id: 1,
+        img: slide1,
+        description: "Газобетон Bonolit 100х250х600 мм D500 от 75 руб. до 185,00 руб."
+    }, {
+        id: 2,
+        img: slide2,
+        description: "Кирпич от 30 руб."
+    }, {
+        id: 3,
+        img: slide3,
+        description: "Гипсокартон 2500х1200х12,5 мм влагостойкий от 423,00 руб."
+    }, {
+        id: 4,
+        img: slide4,
+        description: "Пазогребневая плита 667х500х80 мм Кнауф от 250,00 руб. до 370 руб."
+    }, {
+        id: 5,
+        img: slide5,
+        description: "Монтажные клеи, очистители и пены от 330,00 руб до 750 руб."
+    }, {
+        id: 6,
+        img: slide6,
+        description: "Все виды лакокрасочных материалов от 1700,00 руб."
+    }, {
+        id: 7,
+        img: slide7,
+        description: "Все виды растворителей, обезжирователей от 329,00 и до 1773,00 руб."
+    }, {
+        id: 8,
+        img: slide8,
+        description: "Грунт Knauf Миттельгрунд для впитывающих оснований концентрат 10 к от 2700,00 руб."
+    },
+]
