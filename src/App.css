@@ -8,11 +8,22 @@
   margin: 0 -10px;
 }
 .slick-dots li button:before {
-  font-size: 12px !important;
+  font-size: 16px !important;
   color: #00a550 !important;
 }
 .slick-prev:before,
 .slick-next:before {
-  font-size: 25px !important;
+  font-size: 30px !important;
   color: #00a550 !important;
+}
+@media (max-width: 375px) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 20px !important;
+    color: #00a550 !important;
+  }
+  .slick-dots li button:before {
+    font-size: 12px !important;
+    color: #00a550 !important;
+  }
 }

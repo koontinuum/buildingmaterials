@@ -30,7 +30,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
 }
 .product:hover {
   background: white;
@@ -40,6 +39,7 @@
 .product img {
   width: 200px;
   height: 200px;
+  margin-bottom: 14px;
 }
 .product a {
   background: #00a550;
@@ -54,6 +54,7 @@
 .product b {
   height: 60px;
   color: #1f1f1f;
+  margin-bottom: 14px;
 }
 @media (max-width: 640px) {
   .catalog h2 {
