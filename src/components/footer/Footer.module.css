@@ -7,12 +7,12 @@
   background: #003519;
 }
 .footer__about img {
+  margin-bottom: 20px;
   width: 200px;
 }
 .footer__about {
   display: flex;
   flex-direction: column;
-  gap: 22px;
 }
 .footer__about b {
   color: white;
@@ -20,15 +20,16 @@
 .footer__contacts {
   text-align: end;
   display: flex;
-  gap: 12px;
   flex-direction: column;
 }
 .footer__contacts a {
+  margin-bottom: 5px;
   color: white;
   font-size: 20px;
   font-weight: 500;
 }
 .footer__contacts h2 {
+  margin-bottom: 5px;
   color: white;
 }
 .footer__contacts a:hover {
@@ -38,9 +39,9 @@
 .footer__contacts div {
   justify-content: end;
   display: flex;
-  gap: 24px;
 }
 .footer__contacts div img {
+  margin-left: 20px;
   width: 40px;
 }
 @media (max-width: 768px) {
@@ -49,6 +50,9 @@
   }
 }
 @media (max-width: 490px) {
+  .footer__about img {
+    width: 100px;
+  }
   .footer {
     padding: 5px 5px;
   }
