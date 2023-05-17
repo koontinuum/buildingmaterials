@@ -1,0 +1,60 @@
+.main {
+  width: 100%;
+  height: 720px;
+  background: url(../../assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main div {
+  border-radius: 16px;
+  background-color: #ffffff05;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(25px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 4em 4em;
+}
+.main div h1 {
+  color: white;
+  font-size: 30px;
+}
+.main div p {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.main div button {
+  width: 13rem;
+  height: 3rem;
+  border-radius: 5em;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #00a550;
+}
+.main div button a {
+  color: white;
+}
+.main div button:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+@media (max-width: 1024px) {
+  .main div {
+    width: 90%;
+    padding: 1em 1em;
+  }
+}
+@media (max-width: 425px) {
+  .main div h1 {
+    font-size: 18px;
+  }
+}

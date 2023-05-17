@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding: 5% 0 0 0;
+}
+.wrapper h2 {
+  font-size: 44px;
+  margin-bottom: 24px;
+}
+.wrapper p {
+  font-size: 19px;
+  margin-bottom: 3em;
+}
+.aboutStore {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 26px;
+}
+.block img {
+  width: 64px;
+  height: 64px;
+}
+.block p {
+  font-weight: 450;
+}
+@media (max-width: 640px) {
+  .wrapper h2 {
+    font-size: 22px;
+  }
+  .wrapper p {
+    font-size: 16px;
+  }
+  .aboutStore {
+    flex-direction: column;
+  }
+}
