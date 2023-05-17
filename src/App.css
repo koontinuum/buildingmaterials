@@ -11,3 +11,8 @@
   font-size: 12px !important;
   color: #00a550 !important;
 }
+.slick-prev:before,
+.slick-next:before {
+  font-size: 25px !important;
+  color: #00a550 !important;
+}
