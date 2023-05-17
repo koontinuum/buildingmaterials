@@ -36,6 +36,7 @@
   gap: 12px;
 }
 .header__contacts div a {
+  color: #00a550;
   transition: 0.4s;
   cursor: pointer;
   font-weight: 500;
