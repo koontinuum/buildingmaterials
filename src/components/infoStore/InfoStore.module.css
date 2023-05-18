@@ -1,0 +1,52 @@
+.infoCards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 90px 0 40px 0;
+}
+.info__store {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.infoCards h1 {
+  margin-bottom: 40px;
+  font-size: 44px;
+  color: #2f2f2f;
+}
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  height: 380px;
+  padding: 22px 30px 22px 30px;
+  box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 32px;
+  cursor: pointer;
+}
+.infoCard b {
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 450;
+}
+.infoCard div {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2f2f2f;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.info__store div img {
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+}
+.infoCard div .descripMain {
+  margin-bottom: 0;
+}
