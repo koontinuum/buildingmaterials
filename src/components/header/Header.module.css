@@ -33,6 +33,7 @@
   color: #00a550;
   display: flex;
   flex-direction: column;
+  text-align: end;
   gap: 12px;
 }
 .header__contacts div a {
