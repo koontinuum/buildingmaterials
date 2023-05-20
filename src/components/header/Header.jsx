@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import logo from "../../assets/logo.png";
 import phone from "../../assets/phone-green.svg";
@@ -17,12 +18,12 @@ function Header() {
         <img src={logo} alt="" />
       </a>
       <nav className={`${styles.nav} ${showNav ? styles.responsive_nav : ""}`}>
-        <a href="/#" className={styles.navLink}>
+        <Link to="/" className={styles.navLink}>
           Главная
-        </a>
-        <a href="/#" className={styles.navLink}>
-          Каталог
-        </a>
+        </Link>
+        <Link to="/categories" className={styles.navLink}>
+          Товары по категориям
+        </Link>
         <a href="/#" className={styles.navLink}>
           Корзина
         </a>
