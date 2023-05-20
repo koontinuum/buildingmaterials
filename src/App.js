@@ -1,25 +1,16 @@
 import './App.css';
-import AboutStore from './components/aboutStore/AboutStore';
-import Catalog from './components/catalog/Catalog';
-import Header from './components/header/Header';
-import Main from './components/main/Main';
-import Slide from './components/slide/Slide';
-import Location from './components/location/Location';
-import Footer from './components/footer/Footer';
-import InfoStore from './components/infoStore/InfoStore';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MainPage from './pages/mainPage/MainPage';
+import CategoriesPage from './pages/categoriesPage/CategoriesPage';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Catalog />
-      <AboutStore />
-      <Slide />
-      <InfoStore />
-      <Location />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/categories' element={<CategoriesPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
