@@ -30,7 +30,6 @@ function Header() {
         <a href="/#" className={styles.navLink}>
           О нас
         </a>
-
         <button
           className={`${styles.navBtn} ${showNav ? styles.visible : ""} ${
             styles.navCloseBtn
