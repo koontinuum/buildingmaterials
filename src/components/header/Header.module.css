@@ -1,62 +1,119 @@
 .header {
-  width: 100%;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15% 0 15%;
-  background: white;
+  height: 80px;
+  padding: 0 2rem;
   border-bottom: 1px solid #ddd;
 }
-.header__content {
-  display: flex;
-  align-items: center;
-  gap: 32px;
+
+.logo img {
+  width: 130px;
 }
-.header__content .logo {
-  width: 150px;
-}
-.header__content h2 {
-  font-weight: 500;
-  font-size: 20px;
-  color: #00a550;
-}
-.header__contacts {
-  gap: 10px;
+
+.nav {
   display: flex;
   align-items: center;
 }
-.header__contacts img {
-  width: 46px;
+.nav .phone {
+  width: 30px;
 }
-.header__contacts div {
-  color: #00a550;
+.nav .contacts {
+  padding-left: 10px;
+  border-left: 1px solid #ddd;
   display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contacts .numbers {
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  text-align: end;
-  gap: 12px;
+  gap: 6px;
 }
-.header__contacts div a {
-  color: #00a550;
-  transition: 0.4s;
-  cursor: pointer;
+.nav .contacts a {
+  color: #2f2f2f;
   font-weight: 500;
 }
-.header__contacts div a:hover {
-  transform: scale(1.1);
+.nav .contacts a:hover {
+  opacity: 0.5;
 }
-@media (max-width: 950px) {
-  .header {
-    padding: 0 5% 0 5%;
+.navLink {
+  margin: 0 1rem;
+  color: #2f2f2f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  opacity: 0.5;
+}
+
+.navBtn {
+  display: none;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #2f2f2f;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+.navBtn.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.responsive_nav {
+  transform: translateY(-100%);
+}
+
+@media only screen and (max-width: 768px) {
+  .navBtn {
+    visibility: visible;
+    opacity: 1;
+    display: block;
   }
-}
-@media (max-width: 675px) {
-  .header__content h2 {
-    display: none;
+
+  .nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: white;
+    transition: transform 1s;
+    transform: translateY(-120%);
   }
-}
-@media (max-width: 400px) {
-  .header__contacts img {
-    display: none;
+
+  .nav .contacts {
+    padding-right: 60px;
+    border-left: none;
+    font-size: 1.5rem;
+  }
+  .contacts .phone {
+    width: 50px;
+  }
+  .responsive_nav {
+    transform: translateY(0);
+  }
+
+  .navCloseBtn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .navLink {
+    font-size: 1.5rem;
   }
 }

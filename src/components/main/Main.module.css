@@ -52,6 +52,7 @@
   .main div {
     width: 90%;
     padding: 1em 1em;
+    background-position: center center;
   }
 }
 @media (max-width: 425px) {
