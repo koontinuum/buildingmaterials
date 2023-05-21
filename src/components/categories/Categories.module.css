@@ -18,6 +18,7 @@
 }
 .category {
   width: 324px;
+  height: 400px;
   box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
   background: white;
   border-radius: 6px;
@@ -26,6 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
