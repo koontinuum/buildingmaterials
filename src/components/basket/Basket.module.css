@@ -1,0 +1,45 @@
+.basket__wrapper {
+  width: 100%;
+  padding: 5% 5%;
+  text-align: center;
+}
+.basket__wrapper h1 {
+  font-size: 44px;
+  margin-bottom: 24px;
+  color: #1f1f1f;
+}
+.basket__products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
+}
+.basket__product {
+  width: 324px;
+  box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.basket__wrapper button {
+  margin-top: 40px;
+  padding: 1em 1em;
+  border: none;
+  background: #00a550;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.basket__wrapper button:hover {
+  transform: scale(1.1);
+}

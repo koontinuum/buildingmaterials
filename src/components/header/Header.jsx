@@ -24,9 +24,9 @@ function Header() {
         <Link to="/categories" className={styles.navLink}>
           Товары по категориям
         </Link>
-        <a href="/#" className={styles.navLink}>
+        <Link to="/basket" className={styles.navLink}>
           Корзина
-        </a>
+        </Link>
         <a href="/#" className={styles.navLink}>
           О нас
         </a>
