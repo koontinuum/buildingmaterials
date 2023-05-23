@@ -1,20 +1,3 @@
-// import { createSlice } from "@reduxjs/toolkit";
-
-// const basketSlice = createSlice({
-//   name: basket,
-//   initialState: {
-//     counter: 0,
-//   },
-//   reducers: {
-//     addProduct(state, action) {
-//       state.count = state.count + 1
-//     },
-//     deleteProduct(state, action) {
-//       state.count = state.count - 1
-//     }
-//   }
-// })
-
 import { createSlice } from '@reduxjs/toolkit';
 
 const cartSlice = createSlice({
