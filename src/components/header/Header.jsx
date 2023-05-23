@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import logo from "../../assets/logo.png";
 import phone from "../../assets/phone-green.svg";
+import { useSelector } from "react-redux";
 
 function Header() {
   const [showNav, setShowNav] = useState(false);
+  const cartItems = useSelector(state => state.cart.productsBasket);
 
   const showNavbar = () => {
     setShowNav(!showNav);
@@ -25,15 +27,15 @@ function Header() {
           Товары по категориям
         </Link>
         <Link to="/basket" className={styles.navLink}>
-          Корзина
+          Корзина 
+          <span> ({cartItems.length})</span>
         </Link>
         <a href="/#" className={styles.navLink}>
           О нас
         </a>
         <button
-          className={`${styles.navBtn} ${showNav ? styles.visible : ""} ${
-            styles.navCloseBtn
-          }`}
+          className={`${styles.navBtn} ${showNav ? styles.visible : ""} ${styles.navCloseBtn
+            }`}
           onClick={showNavbar}
         >
           <FaTimes />

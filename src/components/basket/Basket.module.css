@@ -29,6 +29,10 @@
   gap: 12px;
 }
 
+.basket__product img {
+  width: 300px;
+}
+
 .basket__wrapper button {
   margin-top: 40px;
   padding: 1em 1em;
