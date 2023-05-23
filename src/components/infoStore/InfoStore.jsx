@@ -1,23 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import css from "./InfoStore.module.css";
 import { infoStore } from "../../objects/infoStore";
+import useAboutUs from "../../hooks/useAboutUs";
 
 function InfoStore() {
+  const { getAboutUs, aboutUs, isLoading } = useAboutUs();
+
+  useEffect(() => {
+    getAboutUs()
+  }, [])
+
   return (
     <div className={css.infoCards}>
       <h1>О нас</h1>
       <div className={css.info__store}>
-        {infoStore.map((item) => (
+        {aboutUs.map((item) => (
           <div className={css.infoCard}>
             <div>
-              <img src={item.img} alt="info-image" />
+              <img src={item.image} alt="info-image" />
               <b className={css.descripMain}>{item.title}</b>
             </div>
-            <b>{item.descrip1}</b>
-            <b>{item.descrip2}</b>
-            <b>{item.descrip3}</b>
-            <b>{item.descrip4}</b>
-            <b>{item.descrip5}</b>
+            {
+              item.facts.map((el) => (
+                <b>— {el}</b>
+              ))
+            }
           </div>
         ))}
       </div>
