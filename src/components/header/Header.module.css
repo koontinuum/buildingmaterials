@@ -35,6 +35,14 @@
   color: #2f2f2f;
   font-weight: 500;
 }
+.aboutLink {
+  color: #2f2f2f;
+  font-weight: 500;
+  padding: 0 15px 0 15px;
+}
+.aboutLink:hover {
+  opacity: 0.5;
+}
 .nav .contacts a:hover {
   opacity: 0.5;
 }
@@ -114,6 +122,9 @@
   }
 
   .navLink {
+    font-size: 1.5rem;
+  }
+  .aboutLink {
     font-size: 1.5rem;
   }
 }
