@@ -33,6 +33,7 @@
 }
 .category img {
   width: 100%;
+  height: 300px;
 }
 .category:hover {
   transform: scale(1.1);
