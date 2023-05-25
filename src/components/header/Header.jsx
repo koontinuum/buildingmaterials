@@ -1,6 +1,7 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import styles from "./Header.module.css";
 import logo from "../../assets/logo.png";
 import phone from "../../assets/phone-green.svg";
@@ -8,7 +9,7 @@ import { useSelector } from "react-redux";
 
 function Header() {
   const [showNav, setShowNav] = useState(false);
-  const cartItems = useSelector(state => state.cart.productsBasket);
+  const cartItems = useSelector((state) => state.cart.productsBasket);
 
   const showNavbar = () => {
     setShowNav(!showNav);
@@ -20,22 +21,25 @@ function Header() {
         <img src={logo} alt="" />
       </a>
       <nav className={`${styles.nav} ${showNav ? styles.responsive_nav : ""}`}>
-        <Link to="/" className={styles.navLink}>
+        <RouterLink to="/" className={styles.navLink}>
           Главная
-        </Link>
-        <Link to="/categories" className={styles.navLink}>
+        </RouterLink>
+        <RouterLink to="/categories" className={styles.navLink}>
           Товары по категориям
-        </Link>
-        <Link to="/basket" className={styles.navLink}>
-          Корзина 
+        </RouterLink>
+        <RouterLink to="/basket" className={styles.navLink}>
+          Корзина
           <span> ({cartItems.length})</span>
-        </Link>
-        <a href="/#" className={styles.navLink}>
-          О нас
-        </a>
+        </RouterLink>
+        <ScrollLink to="about-section" smooth={true} duration={1000}>
+          <a className={styles.aboutLink} href="about-section">
+            О нас
+          </a>
+        </ScrollLink>
         <button
-          className={`${styles.navBtn} ${showNav ? styles.visible : ""} ${styles.navCloseBtn
-            }`}
+          className={`${styles.navBtn} ${showNav ? styles.visible : ""} ${
+            styles.navCloseBtn
+          }`}
           onClick={showNavbar}
         >
           <FaTimes />

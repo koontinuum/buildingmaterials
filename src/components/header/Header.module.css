@@ -5,6 +5,11 @@
   height: 80px;
   padding: 0 2rem;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 1;
 }
 
 .logo img {
@@ -34,6 +39,14 @@
 .nav .contacts a {
   color: #2f2f2f;
   font-weight: 500;
+}
+.aboutLink {
+  color: #2f2f2f;
+  font-weight: 500;
+  padding: 0 15px 0 15px;
+}
+.aboutLink:hover {
+  opacity: 0.5;
 }
 .nav .contacts a:hover {
   opacity: 0.5;
@@ -77,7 +90,6 @@
     opacity: 1;
     display: block;
   }
-
   .nav {
     z-index: 1;
     position: fixed;
@@ -114,6 +126,9 @@
   }
 
   .navLink {
+    font-size: 1.5rem;
+  }
+  .aboutLink {
     font-size: 1.5rem;
   }
 }
