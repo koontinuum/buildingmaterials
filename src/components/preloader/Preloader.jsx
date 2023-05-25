@@ -11,7 +11,7 @@ const Preloader = ({ full }) => {
             cx="170"
             cy="170"
             r="160"
-            stroke="#6AC4FF"
+            stroke="#00a550"
           />
           <circle
             className={css.circle}
@@ -25,7 +25,7 @@ const Preloader = ({ full }) => {
             cx="170"
             cy="170"
             r="110"
-            stroke="#6AC4FF"
+            stroke="#00a550"
           />
           <circle
             className={css.circle}
@@ -34,6 +34,7 @@ const Preloader = ({ full }) => {
             r="85"
             stroke="#363A40"
           />
+          {/*<circle cx="170" cy="170" r="60" stroke="#00bdd0"/>*/}
         </svg>
       </div>
     </div>
