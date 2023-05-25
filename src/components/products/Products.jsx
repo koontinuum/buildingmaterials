@@ -13,6 +13,7 @@ function Products() {
   const location = useLocation();
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false)
+  const [queryParam, setQuery] = useState()
 
   const cartItems = useSelector(state => state.cart);
   const dispatch = useDispatch();
@@ -25,6 +26,13 @@ function Products() {
   const handleRemoveItem = (itemId) => {
     dispatch(removeItem(itemId));
   };
+
+  useEffect(() => {
+    const currentPath = decodeURIComponent(location.pathname);
+    const splitPath = currentPath.split('/');
+    const lastSegment = splitPath[splitPath.length - 1];
+    setQuery(lastSegment)
+  }, [])
 
   const getData = async (lastSegment) => {
     setIsLoading(true)
@@ -54,6 +62,7 @@ function Products() {
 
   return (
     <div className={css.product__wrapper}>
+      <h1>{queryParam}</h1>
       <div className={css.products}>
         {data?.map((item, index) => (
           <div className={css.product} key={index}>
