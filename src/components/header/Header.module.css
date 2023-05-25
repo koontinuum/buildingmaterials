@@ -5,6 +5,11 @@
   height: 80px;
   padding: 0 2rem;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 1;
 }
 
 .logo img {
@@ -85,7 +90,6 @@
     opacity: 1;
     display: block;
   }
-
   .nav {
     z-index: 1;
     position: fixed;

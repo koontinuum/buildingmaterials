@@ -6,7 +6,7 @@ function AboutStore() {
   return (
     <div className={css.wrapper}>
       <h2>Преимущества нашего магазина</h2>
-      <p>Причины, по которым выбирают нас</p>
+      <p>Причины, по которым выбирают нас :</p>
       <div className={css.aboutStore}>
         {storeBlocks.map((item) => (
           <div className={css.block}>
