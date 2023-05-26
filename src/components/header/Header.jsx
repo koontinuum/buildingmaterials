@@ -6,6 +6,7 @@ import styles from "./Header.module.css";
 import logo from "../../assets/logo.png";
 import phone from "../../assets/phone-green.svg";
 import { useSelector } from "react-redux";
+import basket from "../../assets/basket.svg";
 
 function Header() {
   const [showNav, setShowNav] = useState(false);
@@ -53,6 +54,10 @@ function Header() {
         </div>
       </nav>
       <button className={styles.navBtn} onClick={showNavbar}>
+        <RouterLink to="/basket" className={styles.basketLink}>
+          <img src={basket} alt="" />
+          <span> ({cartItems.length})</span>
+        </RouterLink>
         <FaBars />
       </button>
     </header>
