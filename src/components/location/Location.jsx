@@ -6,9 +6,9 @@ function Location() {
     <div className={css.wrapper__location}>
       <h1>Наше местоположение на карте</h1>
       <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A97d5356916c8f5a132a3a05ee6c00c3e767a8268383c23e7f0050e50c1c87277&amp;source=constructor"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac66a8881c99bef6246282f49ce3cee879931f266edc940925b54973ae7c13c42&amp;source=constructor"
         width="100%"
-        height="450"
+        height="400"
         frameborder="0"
       ></iframe>
       <b>МКАД, 41-й километр, 4c28! Павильон Ж-3/8 наше местоположение.</b>
