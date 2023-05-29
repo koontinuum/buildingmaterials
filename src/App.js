@@ -4,6 +4,7 @@ import MainPage from './pages/mainPage/MainPage';
 import CategoriesPage from './pages/categoriesPage/CategoriesPage';
 import ProductPage from './pages/productPage/ProductPage';
 import BasketPage from './pages/basketPage/BasketPage';
+import AboutStorePage from './pages/aboutStorePage/AboutStorePage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/product' element={<ProductPage />} />
         <Route path='/product/:id' element={<ProductPage />} />
         <Route path='/basket' element={<BasketPage />} />
+        <Route path='/about-store' element={<AboutStorePage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -32,11 +32,10 @@ function Header() {
           Корзина
           <span> ({cartItems.length})</span>
         </RouterLink>
-        <ScrollLink to="about-section" smooth={true} duration={1000}>
-          <a className={styles.aboutLink} href="about-section">
-            О нас
-          </a>
-        </ScrollLink>
+        <RouterLink to="/about-store" className={styles.navLink}>
+          О нас
+        </RouterLink>
+
         <button
           className={`${styles.navBtn} ${showNav ? styles.visible : ""} ${
             styles.navCloseBtn

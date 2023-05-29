@@ -22,19 +22,21 @@
   background: white;
   border-radius: 6px;
   border: 1px solid #ddd;
-  padding: 20px 15px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 12px;
 }
 
 .basket__product img {
-  width: 300px;
+  width: 100%;
+  height: 292px;
+  margin-bottom: 16px;
 }
 
-.basket__wrapper button {
-  margin-top: 40px;
+.basket__wrapper .removeBtn {
+  margin-top: 10px;
   padding: 1em 1em;
   border: none;
   background: #00a550;
@@ -44,6 +46,16 @@
   transition: 0.3s ease;
 }
 
+.buyBtn {
+  margin-top: 40px;
+  padding: 1em 1em;
+  border: none;
+  background: #00a550;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
 .basket__wrapper button:hover {
   transform: scale(1.1);
 }

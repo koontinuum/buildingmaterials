@@ -15,9 +15,9 @@ function MainPage() {
       <Header />
       <Main />
       <Categories />
+      <Slide />
       <Catalog />
       <AboutStore />
-      <Slide />
       <InfoStore />
       <Location />
       <Footer />

@@ -9,7 +9,6 @@ function CategoriesPage() {
     <div>
       <Header />
       <Categories />
-      <Slide />
       <Footer />
     </div>
   );
