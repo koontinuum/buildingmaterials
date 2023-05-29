@@ -13,7 +13,7 @@
   flex-wrap: wrap;
 }
 .infoCards h1 {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-size: 44px;
   color: #2f2f2f;
 }
@@ -49,4 +49,9 @@
 }
 .infoCard div .descripMain {
   margin-bottom: 0;
+}
+@media (max-width: 640px) {
+  .infoCards h1 {
+    font-size: 22px;
+  }
 }

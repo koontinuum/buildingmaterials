@@ -1,11 +1,12 @@
 .catalog {
   width: 100%;
   padding: 5% 5%;
+  margin: 50px 0 50px 0;
+
   text-align: center;
 }
 .catalog h2 {
   font-size: 44px;
-  margin-bottom: 24px;
   color: #1f1f1f;
 }
 .catalog p {
