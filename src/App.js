@@ -8,16 +8,18 @@ import AboutStorePage from './pages/aboutStorePage/AboutStorePage';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/categories' element={<CategoriesPage />} />
-        <Route path='/product' element={<ProductPage />} />
-        <Route path='/product/:id' element={<ProductPage />} />
-        <Route path='/basket' element={<BasketPage />} />
-        <Route path='/about-store' element={<AboutStorePage />} />
-      </Routes>
-    </BrowserRouter>
+    <div className='App'>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<MainPage />} />
+          <Route path='/categories' element={<CategoriesPage />} />
+          <Route path='/product' element={<ProductPage />} />
+          <Route path='/product/:id' element={<ProductPage />} />
+          <Route path='/basket' element={<BasketPage />} />
+          <Route path='/about-store' element={<AboutStorePage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
