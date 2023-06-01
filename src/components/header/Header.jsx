@@ -28,14 +28,19 @@ function Header() {
         <RouterLink to="/categories" className={styles.navLink}>
           Товары по категориям
         </RouterLink>
+        <RouterLink to="/about-store" className={styles.navLink}>
+          О нас
+        </RouterLink>
         <RouterLink to="/basket" className={styles.navLink}>
           Корзина
           <span> ({cartItems.length})</span>
         </RouterLink>
-        <RouterLink to="/about-store" className={styles.navLink}>
-          О нас
-        </RouterLink>
-
+        <a
+          className={styles.navLink}
+          href="https://adminpanel-mirstroymaterialov.vercel.app/"
+        >
+          Для персонала
+        </a>
         <button
           className={`${styles.navBtn} ${showNav ? styles.visible : ""} ${
             styles.navCloseBtn
