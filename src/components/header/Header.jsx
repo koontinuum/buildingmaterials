@@ -19,19 +19,19 @@ function Header() {
   return (
     <header className={styles.header}>
       <a href="/#" className={styles.logo}>
-        <img src={logo} alt="" />
+        <img src={logo} alt="Строительные материалы" />
       </a>
       <nav className={`${styles.nav} ${showNav ? styles.responsive_nav : ""}`}>
         <RouterLink to="/" className={styles.navLink}>
           Главная
         </RouterLink>
-        <RouterLink to="/categories" className={styles.navLink}>
+        <RouterLink to="/категории" className={styles.navLink}>
           Товары по категориям
         </RouterLink>
-        <RouterLink to="/about-store" className={styles.navLink}>
+        <RouterLink to="/о-магазине" className={styles.navLink}>
           О нас
         </RouterLink>
-        <RouterLink to="/basket" className={styles.navLink}>
+        <RouterLink to="/корзина" className={styles.navLink}>
           Корзина
           <span> ({cartItems.length})</span>
         </RouterLink>
@@ -50,7 +50,7 @@ function Header() {
           <FaTimes />
         </button>
         <div className={styles.contacts}>
-          <img className={styles.phone} src={phone} alt="phone" />
+          <img className={styles.phone} src={phone} alt="Контакты" />
           <div className={styles.numbers}>
             <a href="">+79017029445</a>
             <a href="">+79160540090</a>
@@ -58,7 +58,7 @@ function Header() {
         </div>
       </nav>
       <button className={styles.navBtn} onClick={showNavbar}>
-        <RouterLink to="/basket" className={styles.basketLink}>
+        <RouterLink to="/корзина" className={styles.basketLink}>
           <img src={basket} alt="" />
           <span> ({cartItems.length})</span>
         </RouterLink>
