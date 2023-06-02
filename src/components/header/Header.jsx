@@ -25,13 +25,13 @@ function Header() {
         <RouterLink to="/" className={styles.navLink}>
           Главная
         </RouterLink>
-        <RouterLink to="/категории" className={styles.navLink}>
+        <RouterLink to="/categories" className={styles.navLink}>
           Товары по категориям
         </RouterLink>
-        <RouterLink to="/о-магазине" className={styles.navLink}>
+        <RouterLink to="/about-store" className={styles.navLink}>
           О нас
         </RouterLink>
-        <RouterLink to="/корзина" className={styles.navLink}>
+        <RouterLink to="/basket" className={styles.navLink}>
           Корзина
           <span> ({cartItems.length})</span>
         </RouterLink>
@@ -58,7 +58,7 @@ function Header() {
         </div>
       </nav>
       <button className={styles.navBtn} onClick={showNavbar}>
-        <RouterLink to="/корзина" className={styles.basketLink}>
+        <RouterLink to="/basket" className={styles.basketLink}>
           <img src={basket} alt="" />
           <span> ({cartItems.length})</span>
         </RouterLink>

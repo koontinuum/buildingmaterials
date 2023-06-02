@@ -12,11 +12,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<MainPage />} />
-          <Route path='/категории' element={<CategoriesPage />} />
-          <Route path='/товары' element={<ProductPage />} />
-          <Route path='/товар/:id' element={<ProductPage />} />
-          <Route path='/корзина' element={<BasketPage />} />
-          <Route path='/о-магазине' element={<AboutStorePage />} />
+          <Route path='/categories' element={<CategoriesPage />} />
+          <Route path='/product' element={<ProductPage />} />
+          <Route path='/product/:id' element={<ProductPage />} />
+          <Route path='/basket' element={<BasketPage />} />
+          <Route path='/about-store' element={<AboutStorePage />} />
         </Routes>
       </BrowserRouter>
     </div>
